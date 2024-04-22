@@ -5,38 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="TTLakes/stylesheet.css">
         <link rel="stylesheet" href="rules.css">
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     </head>
     <body>  
-        <header>
-            <article class="header_line">
-                <img class="header__button_Burgericon" src="icons/burger.svg" alt="Меню">
-                <img class="header__dividerIcon1" src="icons/divider.svg" alt=""> 
-                <img class="header__link_logoIcon" src="imgs/Group.svg" alt="Логотип компании">
-                <img class="header__dividerIon2" src="icons/divider.svg" alt=""> 
-                <img class="header__button_repairIcon" src="icons/repair.svg" alt="Вкладка починки">  
-                <img class="header__button_checkStatusIcon" src="icons/checkstatus.svg" alt="">
-            </article>
+        <header class="header">
+            <ul class="header__structure">
+                <li class="header__button_BurgerIcon"><img src="icons/burger.svg" alt="Меню"></li>
+                <li class="header__dividerIcon1"><img src="icons/divider.svg" alt=""></li>
+                <li class="header__link_logoIcon2"><img src="imgs/Group.svg" alt="Логотип компании"></li>
+                <li class="header__dividerIon"><img src="icons/divider.svg" alt=""></li>
+                <li class="header__button_repairIcon"><img src="icons/repair.svg" alt="Вкладка починки"></li> 
+                <li class="header__button_checkStatusIcon"><img src="icons/checkstatus.svg" alt=""></li>
+            </ul>
         </header>
         <main class="main">
             <article class="main__pageTitle">
                 <div class="main__pageTitle_hilight"></div>
                 <h1 class="main__pageTitle_text">Услуги и сервисы</h1>
             </article>
-            <aside class="sideBar">
-                <nav class="sideMenu">
-                    <button class="sideMenu__button">Ремонтируемые устройства</button>
-                    <button class="sideMenu__button">Ремонтируемые бренды</button>
-                    <button class="sideMenu__button">Цены на услуги</button>
-                    <button class="sideMenu__button">Адреса сервисных центров</button>
-                    <button class="sideMenu__button">Специальные цены</button>
-                    <button class="sideMenu__button">Отзывы</button>
+            <aside class="main__asideBox">
+                <nav class="main__sideMenu" style="display: flex;">
+                    <button class="main__sideMenu_button">Ремонтируемые устройства</button>
+                    <button class="main__sideMenu_button">Ремонтируемые бренды</button>
+                    <button class="main__sideMenu_button">Цены на услуги</button>
+                    <button class="main__sideMenu_button">Адреса сервисных центров</button>
+                    <button class="main__sideMenu_button">Специальные цены</button>
+                    <button class="main__sideMenu_button">Отзывы</button>
                 </nav>
                 <div class="sideMenu__leftEage_fade"></div>
                 <div class="sideMenu__rightEage_fade"></div>
             </aside>
-            <article class="firstBlock">
-                <p class="firstBlock__about">Мы являемся авторизованным сервисным центром по ремонту
+            <article class="main__blockAbout">
+                <p class="main__blockAbout_text">Мы являемся авторизованным сервисным центром по ремонту
                     техники Dell. Только у нас вы можете отремонтировать свой ноутбу
                     к Dell с официальной гарантией производителя.</p>
             </article>
