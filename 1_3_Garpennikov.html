@@ -7,54 +7,82 @@
         <link rel="stylesheet" href="rules.css">
     </head>
     <body>  
-        <header>
-            <ul class="menu">
-                <li class="menu__button">
-                    <img class="menu__button_burgerIcon" src="icons/burger.svg" alt="Меню">
-                </li>
-                <li class="menu__divider" id="xs-menu-element-none">
-                    <img class="menu__divider_icon1" src="icons/divider.svg" alt="">
-                </li>
-                <li class="menu__link">
-                    <img class="menu__link_logo" src="imgs/Group.svg" alt="Логотип компании">
-                </li>
-                <li class="menu__button" id="xs-menu-element-none">
-                    <img class="menu__button_callIcon" src="icons/call.svg" alt="Звонок">
-                </li>
-                <li class="menu__button" id="xs-menu-element-none">
-                    <img class="menu__button_chatIcon" src="icons/chat.svg" alt="Чат">
-                </li>
-                <li class="menu__button" id="xs-menu-element-none">
-                    <img class="menu__button_profileIcon" src="icons/profile.svg" alt="Профиль">
-                </li>
-                <li class="menu__divider">
-                    <img class="menu__divider_icon2" src="icons/divider.svg" alt="">
-                </li>
-                <li class="menu__button">
-                    <img class="menu__button_repairIcon" src="icons/repair.svg" alt="Вкладка починки">
-                </li> 
-                <li class="menu__button">
-                    <img class="menu__button_checkStatusIcon" src="icons/checkstatus.svg" alt="Проверить статус">
-                </li>
-            </ul>
+        <header class="xl-header--hidden">
+            <nav class="nav header__menu">
+                <ul class="nav__list">
+                    <li class="menu__button">
+                        <img class="menu__button_burgerIcon" src="icons/burger.svg" alt="Меню">
+                    </li>
+                    <li class="menu__divider xs-menu-element-none">
+                        <img class="menu__divider_icon1 xs-menu-element-none" src="icons/divider.svg" alt="">
+                    </li>
+                    <li class="menu__link">
+                        <img class="menu__link_logo" src="imgs/Group.svg" alt="Логотип компании">
+                    </li>
+                    <li class="menu__button xs-menu-element-none" >
+                        <img class="menu__button_callIcon" src="icons/call.svg" alt="Звонок">
+                    </li>
+                    <li class="menu__button xs-menu-element-none" >
+                        <img class="menu__button_chatIcon" src="icons/chat.svg" alt="Чат">
+                    </li>
+                    <li class="menu__button xs-menu-element-none" >
+                        <img class="menu__button_profileIcon" src="icons/profile.svg" alt="Профиль">
+                    </li>
+                    <li class="menu__divider">
+                        <img class="menu__divider_icon2" src="icons/divider.svg" alt="">
+                    </li>
+                    <li class="menu__button">
+                        <img class="menu__button_repairIcon" src="icons/repair.svg" alt="Вкладка починки">
+                    </li> 
+                    <li class="menu__button">
+                        <img class="menu__button_checkStatusIcon" src="icons/checkstatus.svg" alt="Проверить статус">
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main class="main">
             <article class="main__pageTitle">
                 <div class="main__pageTitle_hilight"></div>
                 <h1 class="main__pageTitle_text">Услуги и сервисы</h1>
             </article>
-            <aside class="main__asideBox">
-                <nav class="main__sideMenu" style="display: flex;">
-                    <button class="main__sideMenu_button">Ремонтируемые устройства</button>
-                    <button class="main__sideMenu_button">Ремонтируемые бренды</button>
-                    <button class="main__sideMenu_button">Цены на услуги</button>
-                    <button class="main__sideMenu_button">Адреса сервисных центров</button>
-                    <button class="main__sideMenu_button">Специальные цены</button>
-                    <button class="main__sideMenu_button">Отзывы</button>
+            <asid>
+                <nav class="main__asideBox">
+                    <ul class="main__sideMenu">
+                        <li>
+                            <button class="main__sideMenu_button">
+                                Ремонтируемые устройства
+                            </button>
+                        </li>
+                        <li>
+                            <button class="main__sideMenu_button">
+                                Ремонтируемые бренды
+                            </button>
+                        </li>
+                        <li>
+                            <button class="main__sideMenu_button">
+                                Цены на услуги
+                            </button>
+                        </li>
+                        <li>
+                            <button class="main__sideMenu_button">
+                                Адреса сервисных центров
+                            </button>
+                        </li>
+                        <li>
+                            <button class="main__sideMenu_button">
+                                Специальные цены
+                            </button>
+                        </li>
+                        <li>
+                            <button class="main__sideMenu_button">
+                                Отзывы
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="sideMenu__leftEage_fade"></div>
+                    <div class="sideMenu__rightEage_fade"></div>
                 </nav>
-                <div class="sideMenu__leftEage_fade"></div>
-                <div class="sideMenu__rightEage_fade"></div>
-            </aside>
+            </asid>
             <article class="main__block">
                 <div class="main__block_text"><p class="main__block_par1"">Мы являемся авторизованным сервисным центром по ремонту
                     техники Dell. Только у нас вы можете отремонтировать свой ноутбу
@@ -64,7 +92,7 @@
                     <img class="main__readMore_expandIcon" src="icons/expand.svg" alt="">
                     <span class="main__readMore_text">Читать далее</span>
                 </div>
-                <img class="main__img" src="imgs/_MG_3223.png" alt="">
+                <img class="main__img" style="margin-left: -16px;" src="imgs/_MG_3223.png" alt="">
             </article>
         </main>
     </body>
