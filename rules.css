@@ -160,6 +160,13 @@
         background: linear-gradient(to left, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
 
+    .main__block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
     .main__block_text {
         width: 288px;
         height: 90px;
@@ -178,7 +185,11 @@
         text-align: left;
     }
 
-    /*.main__readMore {     не работает почему?
+    .main__block_par1 {
+        margin: 0;        
+    }
+
+    .main__readMore {     
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -186,7 +197,7 @@
         margin-bottom: 16px;
         width: 132px;
         height: 24px;
-    }*/
+    }
     
     .main__readMore_text {
         letter-spacing: -0.2px;
@@ -393,17 +404,30 @@
         font-size: 14px;
         line-height: 18px;
         text-align: left;
-    }    
+    }
 
-    /*.main__readMore {     не работает почему?
-        display: flex;
-        flex-direction: row;
+    .main__block_par1 {
+        margin: 0;        
+        margin-bottom: 20px;
+    }
+    
+    .main__block_text::after {
+        letter-spacing: 0.2px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+        content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера" ;
+    }
+
+    .main__readMore {    
+        display: inline-flex;
         align-items: center;
-        margin-left: 16px;
-        margin-bottom: 16px;
+        margin-left: 1px;
+
+        margin-right: auto;
         width: 132px;
         height: 24px;
-    }*/
+    }
     
     .main__readMore_text {
         letter-spacing: -0.2px;
