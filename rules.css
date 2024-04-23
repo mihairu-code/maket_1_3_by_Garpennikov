@@ -200,6 +200,7 @@
     body {
         padding: 0;
         margin: 0;
+        height: 416px;
     }
 
 
@@ -309,8 +310,8 @@
         display: flex;
 
         position: relative;
-        margin: 0;
-        margin-top: 24px;
+
+        margin: 32px 0;
         padding: 0;
 
         height: 40px;
@@ -365,14 +366,25 @@
         background: linear-gradient(to left, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
 
-    .main__blockAbout {
-        height: 88px;
-        margin: 24px 16px;
+    .main__block {
+        width: 720px;
+        height: 208px;
+        margin-left: 24px;
+        margin-right: 25px;
+        margin-bottom: 40px;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
     }
 
-    .main__blockAbout_text {
+
+    .main__block_text {
         margin: 0;
         padding: 0;
+        width: 312px;
+        height: 160px;
 
         font-weight: 300;
         letter-spacing: 0.2px;
@@ -380,6 +392,19 @@
         line-height: 18px;
         text-align: left;
     }
+
+    .main__block_text::after {
+        margin-top: 20px;
+        content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера";
+
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left;
+        align-self: flex-end;
+    }
+    
 
     /*.main__readMore {     не работает почему?
         display: flex;
@@ -393,6 +418,12 @@
     
     .main__readMore_text {
         letter-spacing: -0.2px;
+    }
+
+    .main__img {
+        width: 360px;
+        height: 208px;
+        border-radius: 4px;
     }
 
 }
