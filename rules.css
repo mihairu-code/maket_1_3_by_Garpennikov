@@ -15,7 +15,7 @@
     
     
 
-    .header__structure {
+    .menu {
         width: 100%;
         height: 87px;
         padding: 0;
@@ -29,45 +29,33 @@
         align-items: center ;
         justify-content: space-between;
         flex-direction: row;
-
     }
     
-    .header__button_BurgerIcon {
+    .menu__button {
         width: 40px;
         height: 40px;
         margin-left: 16px;
     }
     
-    .header__link_logoIcon {
+    .menu__link {
         width: 96px;
         height: 50px;
         margin-left: 16px;    
         margin-right: auto;
     }
     
-    .header__dividerIcon1 {
-        display: none;   
-    
-    }
-    
-    .header__dividerIcon2 {
+    .menu__divider {
         width: 2px;
         height: 32px;
-        margin-left: auto;    
-    
+        margin-left: auto;   
+    }
+
+    #xs-menu-element-none{
+        display: none;
     }
     
-    .header__button_repairIcon {
-        width: 40px;
-        height: 40px;
-        margin-left: 16px;
-    }
-    
-    .header__button_checkStatusIcon {
-        width: 40px;
-        height: 40px;
+    .menu__button:last-child {
         margin-right: 16px;
-        margin-left: 16px;
     }
     
 
@@ -213,53 +201,66 @@
         padding: 0;
         margin: 0;
     }
-    
-    .header {
+
+
+
+    .menu {
         width: 100%;
         height: 87px;
+        padding: 0;
+        margin: 0;
 
         background: #FFFFFF;
         border-bottom: 1px solid #D9FFF5;
 
+        list-style-type: none;
         display: flex;
         align-items: center ;
         justify-content: space-between;
         flex-direction: row;
+
+    }
+
+    #xs-menu-element-none {
+        display: flex;
     }
     
-    .header__button_BurgerIcon {
+    .menu__button {
         width: 40px;
         height: 40px;
         margin-left: 16px;
     }
+
+    .menu__button:first-child {
+        margin-left: 24px;
+        margin-right: 0;
+    }
+
+    .menu__button:nth-last-child(2) {
+        margin-left: 0;
+    }
+
+    .menu__button:last-child {
+        margin-right: 24px;
+    }
     
-    .header__link_logoIcon {
+    .menu__link {
         width: 96px;
         height: 50px;
-        margin-left: 16px;    
+        margin-left: 0;    
         margin-right: auto;
     }
     
-
-    .header__dividerIcon {
+    .menu__divider {
         width: 2px;
         height: 32px;
-        margin-left: auto;    
-    
+        margin: 0 20px;   
+    }
+
+    .menu__divider:first-child {
+        margin-left: 20px;
     }
     
-    .header__button_repairIcon {
-        width: 40px;
-        height: 40px;
-        margin-left: 16px;
-    }
-    
-    .header__button_checkStatusIcon {
-        width: 40px;
-        height: 40px;
-        margin-right: 16px;
-        margin-left: 16px;
-    }
     
 
 
@@ -395,10 +396,3 @@
     }
 
 }
-
-
-
-
-
-
-
