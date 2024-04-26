@@ -7,104 +7,104 @@
         <link rel="stylesheet" href="rules.css">
     </head>
     <body>  
-        <header class="xl-header--hidden">
-            <nav class="nav header__menu">
-                <ul class="nav__list">
-                    <li class="menu__button">
-                        <img class="menu__button_burgerIcon" src="icons/burger.svg" alt="Меню">
+        <header class="b-header xl--hidden">
+            <nav class="b-header__nav b-nav">
+                <ul class="b-nav__list">
+                    <li class="b-nav__el">
+                        <img class="b-nav__burgerIcon" src="icons/burger.svg" alt="Меню">
                     </li>
-                    <li class="menu__divider xs-menu-element-none">
-                        <img class="menu__divider_icon1 xs-menu-element-none" src="icons/divider.svg" alt="">
+                    <li class="b-nav__el xs--hidden b-nav__el--divider">
+                        <img class="b-nav__dividerIcon1 xs--hidden" src="icons/divider.svg" alt="">
                     </li>
-                    <li class="menu__link">
-                        <img class="menu__link_logo" src="imgs/Group.svg" alt="Логотип компании">
+                    <li class="b-nav__el b-nav__el--logo">
+                        <img class="b-nav__logo" src="imgs/Group.svg" alt="Логотип компании">
                     </li>
-                    <li class="menu__button xs-menu-element-none" >
-                        <img class="menu__button_callIcon" src="icons/call.svg" alt="Звонок">
+                    <li class="b-nav__el xs--hidden" >
+                        <img class="b-nav__callIcon" src="icons/call.svg" alt="Звонок">
                     </li>
-                    <li class="menu__button xs-menu-element-none" >
-                        <img class="menu__button_chatIcon" src="icons/chat.svg" alt="Чат">
+                    <li class="b-nav__el xs--hidden" >
+                        <img class="b-nav__chatIcon" src="icons/chat.svg" alt="Чат">
                     </li>
-                    <li class="menu__button xs-menu-element-none" >
-                        <img class="menu__button_profileIcon" src="icons/profile.svg" alt="Профиль">
+                    <li class="b-nav__el xs--hidden" >
+                        <img class="b-nav__profileIcon" src="icons/profile.svg" alt="Профиль">
                     </li>
-                    <li class="menu__divider">
-                        <img class="menu__divider_icon2" src="icons/divider.svg" alt="">
+                    <li class="b-nav__el b-nav__el--divider">
+                        <img class="b-nav__dividerIcon2" src="icons/divider.svg" alt="">
                     </li>
-                    <li class="menu__button">
-                        <img class="menu__button_repairIcon" src="icons/repair.svg" alt="Вкладка починки">
+                    <li class="b-nav__el">
+                        <img class="b-nav__repairIcon" src="icons/repair.svg" alt="Вкладка починки">
                     </li> 
-                    <li class="menu__button">
-                        <img class="menu__button_checkStatusIcon" src="icons/checkstatus.svg" alt="Проверить статус">
+                    <li class="b-nav__el">
+                        <img class="b-nav__checkStatusIcon" src="icons/checkstatus.svg" alt="Проверить статус">
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="main">
-            <article class="main__pageTitle">
-                <div class="main__pageTitle_hilight"></div>
-                <h1 class="main__pageTitle_text">Услуги и сервисы</h1>
-                <nav class="xl-main__nav">
-                    <ul class="nav__list --hidden">
+        <main class="b-main">
+            <article class="b-main__title b-pageTitle">
+                <div class="b-pageTitle__hilight"></div>
+                <h1 class="b-pageTitle__text">Услуги и сервисы</h1>
+                <nav class="b-main__nav b-nav xl--visible">
+                    <ul class="b-nav__list xl--nav">
                         <li>
                             <span>Оставить заявку</span>
-                            <img src="icons/repair.svg" alt="Вкладка починки">
+                            <img class="b-nav__repairIcon" src="icons/repair.svg" alt="Вкладка починки">
                         </li>
                         <li>
                             <span>Статус ремонта</span>
-                            <img src="icons/checkstatus.svg" alt="Проверить статус">
+                            <img class="b-nav__checkStatusIcon" src="icons/checkstatus.svg" alt="Проверить статус">
                         </li>
                     </ul>
                 </nav>
             </article>
-            <asid>
-                <nav class="main__asideBox">
-                    <ul class="main__sideMenu">
+            <aside class="b-main__sideBox b-sideBox">
+                <nav class="b-sideBox__nav b-nav">
+                    <ul class="b-nav__list b-scrollMenu">
                         <li>
-                            <button class="main__sideMenu_button">
+                            <button class="b-scrollMenu__button">
                                 Ремонтируемые устройства
                             </button>
                         </li>
                         <li>
-                            <button class="main__sideMenu_button">
+                            <button class="b-scrollMenu__button">
                                 Ремонтируемые бренды
                             </button>
                         </li>
                         <li>
-                            <button class="main__sideMenu_button">
+                            <button class="b-scrollMenu__button">
                                 Цены на услуги
                             </button>
                         </li>
                         <li>
-                            <button class="main__sideMenu_button">
+                            <button class="b-scrollMenu__button">
                                 Адреса сервисных центров
                             </button>
                         </li>
                         <li>
-                            <button class="main__sideMenu_button">
+                            <button class="b-scrollMenu__button">
                                 Специальные цены
                             </button>
                         </li>
                         <li>
-                            <button class="main__sideMenu_button">
+                            <button class="b-scrollMenu__button">
                                 Отзывы
                             </button>
                         </li>
                     </ul>
-                    <div class="sideMenu__leftEage_fade"></div>
-                    <div class="sideMenu__rightEage_fade"></div>
+                    <div class="b-scrollMenu__eage b-scrollMenu__eage--left"></div>
+                    <div class="b-scrollMenu__eage b-scrollMenu__eage--right"></div>
                 </nav>
-            </asid>
-            <article class="main__block">
-                <div class="main__block_text"><p class="main__block_par1"">Мы являемся авторизованным сервисным центром по ремонту
+            </aside>
+            <article class="b-main__info b-info">
+                <div class="b-info__text"><p class="b-info__text--p1"">Мы являемся авторизованным сервисным центром по ремонту
                     техники Dell. Только у нас вы можете отремонтировать свой ноутбу
                     к Dell с официальной гарантией производителя.</p>
                 </div>
-                <div class="main__readMore">
-                    <img class="main__readMore_expandIcon" src="icons/expand.svg" alt="">
-                    <span class="main__readMore_text">Читать далее</span>
+                <div class="b-info__readMore b-readMore">
+                    <img class="b-readMore__expandIcon" src="icons/expand.svg" alt="">
+                    <span class="b-readMore__text">Читать далее</span>
                 </div>
-                <img class="main__img" style="margin-left: -16px;" src="imgs/firstPic.png" alt="">
+                <img class="b-info__img" style="margin-left: -16px;" src="imgs/firstPic.png" alt="">
             </article>
         </main>
     </body>
