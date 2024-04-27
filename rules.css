@@ -49,6 +49,7 @@
     .nav__el--logo {
         width: 96.55px;
         height: 52px;
+        margin-right: auto;
     }
 
     .nav__el--logo:hover {
@@ -208,25 +209,19 @@
         padding: 0 16px;
         
         display: flex;
-        flex-wrap: wrap;
+
         flex-direction: column;
-        align-content: space-between;
         row-gap: 16px;
     }
 
-    .info__text{
-        width: 288px;
-        height: 90px;
+    .info__text {
+        margin: 0; 
 
         overflow: hidden;
         font-weight: 300;
         letter-spacing: 0.2px;
         font-size: 14px;
         line-height: 18px;
-    }
-
-    .info__text--p1 {
-        margin: 0;        
     }
 
     .readMore {     
@@ -246,7 +241,8 @@
     }
 
     .info__img {
-        margin-left: -16px;
+        margin: 0 -16px;
+        border-radius: 5px;
     }
 
 }
@@ -288,23 +284,20 @@
         height: 208px;
         padding-left: 24px;
         padding-right: 25px;
-        padding-bottom: 40px;
 
-        align-content: normal;
-        gap: 0 48px;
+        align-content: space-between;
+        gap: 10px 48px;
+        flex-wrap: wrap;
     }
 
 
     .info__text {
         width: 312px;
-        height: 160px;
-    }
-
-    .info__text--p1 {     
-        margin-bottom: 20px;
     }
     
     .info__text::after {
+        display: inline-flex;
+        margin-top: 18px;
         letter-spacing: 0.2px;
         font-size: 14px;
         line-height: 18px;
@@ -376,7 +369,7 @@
     }
 
     .xl--nav > .nav__el > img {
-        transition: transform 0.5s;
+        transition: transform 0.3s;
     }
 
     .xl--nav > .nav__el > img:hover {
@@ -404,12 +397,12 @@
         padding-right: 28px;
         padding-bottom: 49px;
 
-        gap: 0 36px;
+        flex-wrap: wrap;
+        gap: 13px 36px;
     }
 
     .info__text {
         width: 490px;
-        height: 160px;
     }
 
     .info__text::after {
