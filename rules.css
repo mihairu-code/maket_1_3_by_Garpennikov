@@ -15,7 +15,7 @@
         display: none;
     }
 
-    .b-header__nav {
+    .header__nav {
         width: 100%;
         height: 87px;
         align-content: center;
@@ -25,7 +25,7 @@
         
     }
 
-    .b-nav__list {
+    .nav__list {
         padding: 0 16px;
         margin: 0;
         height: 52px;
@@ -36,20 +36,33 @@
         column-gap: 16px;
     }
     
-    .b-nav__el {
+    .nav__el {
         width: 40px;
         height: 40px;
+        transition: transform 0.5s;
+    }
+
+    .nav__el:hover {
+        transform: scale(110%);
     }
     
-    .b-nav__el--logo {
+    .nav__el--logo {
         width: 96.55px;
         height: 52px;
     }
+
+    .nav__el--logo:hover {
+        transform: none;
+    }
     
-    .b-nav__el--divider {
+    .nav__el--divider {
         width: 2px;
         height: 32px;
         margin-right: 4px;
+    }
+
+    .nav__el--divider:hover {
+        transform: none;
     }
 
 
@@ -57,7 +70,7 @@
 
     /* main block */
 
-    .b-main {
+    .main {
         display: flex;
         flex-direction: column;
         row-gap: 24px;
@@ -78,13 +91,13 @@
         display: none;
     }
     
-    .b-pageTitle {
+    .pageTitle {
         display: flex;
         flex-direction: row;
-        height: 40px;
+        height: 40px; 
     }
 
-    .b-pageTitle__hilight {
+    .pageTitle__hilight {
         width: 4px;
         height: 40px;
         border-top-right-radius: 4px;
@@ -92,7 +105,7 @@
         background-color: #41F6D7;
     }
 
-    .b-pageTitle__text {
+    .pageTitle__text {
         margin: 0;
         margin-left: 12px;
 
@@ -101,11 +114,15 @@
         line-height: 40px;
     }
 
+    .pageTitle__text::before {
+        
+    }
+
 
 
     /* Начало side menu */
 
-    .b-sideBox__nav {
+    .sideBox__nav {
         display: flex;
 
         position: relative;
@@ -114,24 +131,24 @@
         height: 40px;
     }
 
-    .b-scrollMenu {   
+    .scrollMenu {   
         margin: 0; 
         padding: 0;
         list-style: none;       /* Убираю бар */
 
         display: flex;
-        gap: 0;
+        gap: 0 4px;
 
         overflow-x: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
 
-    .b-scrollMenu::-webkit-scrollbar {
+    .scrollMenu::-webkit-scrollbar {
         display: none;
     }
 
-    .b-scrollMenu__button {
+    .scrollMenu__button {
         flex: 0 0 auto;
         height: 40px;
         margin: 0;
@@ -147,37 +164,47 @@
         font-family: 'TT Lakes',sans-serif;
         letter-spacing: -0.2px;
         color: #7E7E82;
+
+        transition: transform 0.3s;
     }
 
-    .b-scrollMenu li:first-child,
-    .b-scrollMenu li:last-child {
-        margin: 0 16px;
-    }
-
-    .b-scrollMenu__button:focus {
+    .scrollMenu__button:focus {
         background-color: #FFFFFF;
         border-color: #B8FFEC;
     }
 
-    .b-scrollMenu__eage {
+    .scrollMenu__button:hover {
+        transform: scale(103%);
+        background-color: #FFFFFF;
+        border-color: #B8FFEC;
+    }
+
+    .scrollMenu li:first-child {
+        margin-left: 16px;
+    }
+    .scrollMenu li:last-child {
+        margin-right: 16px;
+    }
+
+    .scrollMenu__eage {
         position: absolute;
         height: 40px;
     }
 
-    .b-scrollMenu__eage--left {       
+    .scrollMenu__eage--left {       
         left: 0;
         width: 8px;
         background: linear-gradient(to right, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
 
-    .b-scrollMenu__eage--right {
+    .scrollMenu__eage--right {
         right: 0;
         width: 24px;
         background: linear-gradient(to left, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     }
 
 
-    .b-info {
+    .info {
         padding: 0 16px;
         
         display: flex;
@@ -187,7 +214,7 @@
         row-gap: 16px;
     }
 
-    .b-info__text{
+    .info__text{
         width: 288px;
         height: 90px;
 
@@ -198,11 +225,11 @@
         line-height: 18px;
     }
 
-    .b-info__text--p1 {
+    .info__text--p1 {
         margin: 0;        
     }
 
-    .b-readMore {     
+    .readMore {     
         width: 132px;
         height: 24px;
 
@@ -210,9 +237,15 @@
         column-gap: 8px;
 
         letter-spacing: -0.2px;
+
+        transition: transform 0.3s;
     }
 
-    .b-info__img {
+    .readMore:hover {
+        transform: scale(102%);
+    }
+
+    .info__img {
         margin-left: -16px;
     }
 
@@ -227,15 +260,15 @@
 /* Правила для 768px */
 @media (min-width: 768px) {
 
-    .b-nav__list {
+    .nav__list {
         padding: 0 24px;
     }
 
-    .b-nav__el--logo { 
+    .nav__el--logo { 
         margin-right: auto;
     }
     
-    .b-nav__el--divider {
+    .nav__el--divider {
         margin: 0 4px;  
     }
 
@@ -247,11 +280,11 @@
 
 
     /* main block */
-    .b-main {
+    .main {
         row-gap: 32px;
     }
 
-    .b-info { 
+    .info { 
         height: 208px;
         padding-left: 24px;
         padding-right: 25px;
@@ -262,16 +295,16 @@
     }
 
 
-    .b-info__text {
+    .info__text {
         width: 312px;
         height: 160px;
     }
 
-    .b-info__text--p1 {     
+    .info__text--p1 {     
         margin-bottom: 20px;
     }
     
-    .b-info__text::after {
+    .info__text::after {
         letter-spacing: 0.2px;
         font-size: 14px;
         line-height: 18px;
@@ -279,12 +312,12 @@
         content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера" ;
     }
 
-    .b-readMore {    
+    .readMore {    
         margin-right: auto;
         margin-left: 1px;
     }
     
-    .b-info__img {
+    .info__img {
         width: 360px;
         height: 208px;
         margin: 0;
@@ -315,41 +348,57 @@
         display: flex;
     }
 
-    .b-pageTitle__text {
+    .pageTitle__text {
         margin-right: auto;
         margin-left: 30px;
     }
 
 
-    .b-main__nav {
+    .main__nav {
         height: 40px;
     }
 
-    .xl--nav li:first-child,
-    .xl--nav li:last-child {
+    .xl--nav {
         display: inline-flex;
-        height: 40px;
-        align-items: center;
-        column-gap: 8px;
-
+        gap: 0 32px;
+        padding-right: 32px;
     }
 
-    .b-sideBox__nav,
-    .b-scrollMenu {
+    .xl--nav > .nav__el {
+        display: inline-flex;
+        width: auto;
+        gap: 0 8px;
+        align-items: center;
+    }
+
+    .xl--nav > .nav__el:hover {
+        transform: none;
+    }
+
+    .xl--nav > .nav__el > img {
+        transition: transform 0.5s;
+    }
+
+    .xl--nav > .nav__el > img:hover {
+        transform: scale(110%);
+    }
+
+    .sideBox__nav,
+    .scrollMenu {
         width: 1063px;
         height: 82px;
     }
 
-    .b-scrollMenu {
+    .scrollMenu {
         flex-wrap: wrap;
     }
 
-    .b-scrollMenu__eage,
-    .b-scrollMenu__eage {
+    .scrollMenu__eage,
+    .scrollMenu__eage {
         display: none;
     }
 
-    .b-info {
+    .info {
         height: 363px;
         padding-left: 34px;
         padding-right: 28px;
@@ -358,12 +407,12 @@
         gap: 0 36px;
     }
 
-    .b-info__text {
+    .info__text {
         width: 490px;
         height: 160px;
     }
 
-    .b-info__text::after {
+    .info__text::after {
         letter-spacing: 0.2px;
         font-size: 14px;
         line-height: 18px;
@@ -371,7 +420,7 @@
         content: "Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким." ;
     }
 
-    .b-info__img {
+    .info__img {
         width: 531.35px;
         height: 307px;
         
