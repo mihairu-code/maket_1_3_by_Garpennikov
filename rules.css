@@ -37,7 +37,7 @@
     }
     
     .nav__el {
-        height: 40px;
+        align-self: center;
     }
 
     .nav__button {
@@ -83,8 +83,13 @@
     }
     
     .nav__el--logo {
+        display: flex;
+        background-image: url('imgs/Group.svg');
         width: 96.55px;
         height: 52px;
+    }
+
+    .nav__el--divider.xs--hidden + .nav__el {
         margin-right: auto;
     }
 
@@ -94,6 +99,7 @@
     }
     
     .nav__el--divider {
+        background-image: url('icons/divider.svg');
         width: 2px;
         height: 32px;
         margin-right: 4px;
