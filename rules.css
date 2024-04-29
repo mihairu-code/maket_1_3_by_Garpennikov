@@ -37,9 +37,7 @@
     }
     
     .nav__el {
-        width: 40px;
         height: 40px;
-        transition: transform 0.5s, box-shadow 0.3s;
     }
 
     .nav__button {
@@ -47,7 +45,18 @@
         height: 40px;
         border-radius: 50px;
         border-style: none;
+        transition: transform 0.3s;
     }
+
+    .nav__button:hover {
+        transform: scale(110%);
+    }
+
+    .nav__button:active {
+        transform: translate(0em, 0.25em);
+    }
+
+    
 
     .burger {
         background-image: url('icons/burger.svg');
@@ -72,14 +81,6 @@
     .checkStatus {
         background-image: url('icons/checkstatus.svg');
     }
-
-    .nav__el:hover {
-        transform: scale(110%);
-    }
-
-    .nav__el:active {
-        transform: translate(0em, 0.75em);
-    }
     
     .nav__el--logo {
         width: 96.55px;
@@ -87,7 +88,8 @@
         margin-right: auto;
     }
 
-    .nav__el--logo:hover {
+    .nav__el--logo:hover,
+    .nav__el--divider:hover {
         transform: none;
     }
     
@@ -95,10 +97,6 @@
         width: 2px;
         height: 32px;
         margin-right: 4px;
-    }
-
-    .nav__el--divider:hover {
-        transform: none;
     }
 
 
@@ -422,17 +420,19 @@
         align-items: center;
     }
 
-    .xl--nav > .nav__el:hover {
-        transform: none;
+    .nav__el--link {
+        color: #1B1C21;
+        text-decoration: none;
+        transition: color 0.2s;
     }
 
-    .xl--nav > .nav__el > img {
-        transition: transform 0.3s;
+    .nav__el--link:focus,
+    .nav__el--link:hover {
+        color:#1b1c2193;
     }
 
-    .xl--nav > .nav__el > img:hover {
-        transform: scale(110%);
-    }
+
+
 
     .sideBox__nav,
     .scrollMenu {
