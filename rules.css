@@ -39,11 +39,46 @@
     .nav__el {
         width: 40px;
         height: 40px;
-        transition: transform 0.5s;
+        transition: transform 0.5s, box-shadow 0.3s;
+    }
+
+    .nav__button {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border-style: none;
+    }
+
+    .burger {
+        background-image: url('icons/burger.svg');
+    }
+
+    .call {
+        background-image: url('icons/call.svg');
+    }
+
+    .chat {
+        background-image: url('icons/chat.svg');
+    }
+
+    .profile {
+        background-image: url('icons/profile.svg');
+    }
+
+    .repair {
+        background-image: url('icons/repair.svg');
+    }
+
+    .checkStatus {
+        background-image: url('icons/checkstatus.svg');
     }
 
     .nav__el:hover {
         transform: scale(110%);
+    }
+
+    .nav__el:active {
+        transform: translate(0em, 0.75em);
     }
     
     .nav__el--logo {
@@ -236,17 +271,23 @@
     .readMore {     
         width: 132px;
         height: 24px;
+        background: transparent;
+        border: none;
 
         display: inline-flex;
         column-gap: 8px;
 
         letter-spacing: -0.2px;
 
-        transition: transform 0.3s;
+        transition: text-decoration 0.1;
+    }
+    
+    .readMore__text {
+        align-self: center;
     }
 
     .readMore:hover {
-        transform: scale(102%);
+        text-decoration: underline;
     }
 
     .info__img {
